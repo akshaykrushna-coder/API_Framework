@@ -28,7 +28,7 @@ public class Utils {
 	public String getGlobalproperties(String key) throws IOException {
 		Properties prop = new Properties();
 		FileInputStream file = new FileInputStream(
-				".\\resourse\\global.properties");
+				".\\src\\test\\java\\resourse\\global.properties");
 		prop.load(file);
 		String url = prop.getProperty(key);
 		return url;
